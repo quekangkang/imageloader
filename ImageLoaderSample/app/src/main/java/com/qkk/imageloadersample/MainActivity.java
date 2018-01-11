@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         final String[] imageUrls = new String[]{
                 "http://n.sinaimg.cn/blog/crawl/20170803/HxCz-fyitamv4614405.jpg"
         };
-        final ImageLoader imageLoader = new ImageLoader();
+        final ImageLoader imageLoader = new ImageLoader(this);
         setContentView(R.layout.activity_main);
         final ImageView iv = findViewById(R.id.iv);
         findViewById(R.id.btn_load).setOnClickListener(new View.OnClickListener() {
